@@ -1,0 +1,58 @@
+:root {
+    --backgroundColor: #fdfdfd;
+    --textColor: #303030;
+    --secondaryTextColor: #404040;
+    --mutedTextColor: #707070;
+    --subtleBackgroundColor: #f0eeed;
+    --linkColor: #1b04cb;
+    --borderColor: #ccc;
+  }
+
+@media (prefers-color-scheme: dark) {
+:root {
+    --backgroundColor: #0d1214;
+    --textColor: #dbdfdf;
+    --secondaryTextColor: #cfd5d5;
+    --mutedTextColor: #b4b6b8;
+    --subtleBackgroundColor: #1e1e1e;
+    --linkColor: #ffb6b9;
+    --borderColor: #414141;
+}
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: var(--textColor);
+}
+
+body {
+  font-size: 14px;
+  margin: 2.5em;
+  padding: 0;
+  background: var(--backgroundColor);
+  line-height: 1.7em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+a {
+  color: var(--linkColor);
+}
+
+header {
+  margin: 1em 0;
+}
+
+header,
+main {
+  width: 100%;
+  max-width: 36em;
+}
+
+blockquote {
+  background-color: var(--subtleBackgroundColor);
+  padding: 1em 1em 1em 2.5em;
+  margin: 0;
+}
